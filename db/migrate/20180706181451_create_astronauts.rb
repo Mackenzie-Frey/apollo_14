@@ -4,6 +4,7 @@ class CreateAstronauts < ActiveRecord::Migration[5.1]
       t.string :name
       t.integer :age
       t.string :job
+      add_column :mission_id, :astronauts, :integer
     end
   end
 end
